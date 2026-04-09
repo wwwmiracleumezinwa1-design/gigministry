@@ -23,19 +23,19 @@ const STYLES = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --purple: #2D1B5E;
-    --purple-mid: #3d2680;
-    --purple-light: #5a3ea0;
+    --purple: #1A2F1A;
+    --purple-mid: #223d22;
+    --purple-light: #2d5a2d;
     --gold: #C9A84C;
     --gold-light: #e8c96d;
     --white: #FAFAF8;
-    --off: #F3F1EC;
-    --muted: #7B6FA0;
-    --text: #1a1230;
-    --border: rgba(45,27,94,0.12);
-    --card-bg: rgba(255,255,255,0.92);
-    --shadow: 0 4px 32px rgba(45,27,94,0.10);
-    --shadow-lg: 0 12px 56px rgba(45,27,94,0.18);
+    --off: #F5F2EA;
+    --muted: #6B7B5A;
+    --text: #1a2a0f;
+    --border: rgba(26,47,26,0.12);
+    --card-bg: rgba(255,255,255,0.95);
+    --shadow: 0 4px 32px rgba(26,47,26,0.10);
+    --shadow-lg: 0 12px 56px rgba(26,47,26,0.18);
   }
 
   html { scroll-behavior: smooth; }
@@ -51,7 +51,7 @@ const STYLES = `
 
   .nav {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(45,27,94,0.97);
+    background: rgba(15,31,15,0.97);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(201,168,76,0.18);
     padding: 0 24px;
@@ -88,7 +88,7 @@ const STYLES = `
   .nav-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
 
   .hero {
-    background: linear-gradient(135deg, var(--purple) 0%, #1a0f3e 50%, #3b1f6a 100%);
+    background: linear-gradient(135deg, #1A2F1A 0%, #0f1f0f 50%, #243824 100%);
     position: relative; overflow: hidden;
     padding: 90px 24px 80px; text-align: center;
   }
@@ -187,7 +187,7 @@ const STYLES = `
   .how-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .how-icon {
     width: 56px; height: 56px;
-    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    background: linear-gradient(135deg, #1A2F1A, #2d5a2d);
     border-radius: 16px;
     display: flex; align-items: center; justify-content: center;
     margin: 0 auto 20px; font-size: 26px;
@@ -203,7 +203,7 @@ const STYLES = `
   }
   .musician-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
   .musician-card-header {
-    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    background: linear-gradient(135deg, #1A2F1A, #2d5a2d);
     padding: 24px 20px 16px;
     display: flex; align-items: center; gap: 14px;
   }
@@ -214,14 +214,14 @@ const STYLES = `
     font-size: 22px; flex-shrink: 0;
     font-family: 'Playfair Display', serif;
     color: var(--gold); font-weight: 700;
-    background: var(--purple-mid);
+    background: #142014;
   }
   .musician-card-header h3 { color: var(--white); font-size: 17px; font-weight: 700; }
   .musician-card-header p { color: rgba(255,255,255,0.65); font-size: 13px; }
   .musician-card-body { padding: 16px 20px 20px; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
   .tag {
-    background: rgba(45,27,94,0.08); color: var(--purple);
+    background: rgba(26,47,26,0.08); color: var(--purple);
     font-size: 12px; font-weight: 600;
     padding: 3px 10px; border-radius: 20px;
   }
@@ -367,7 +367,7 @@ const STYLES = `
   .payment-note .note-icon { flex-shrink: 0; font-size: 16px; }
 
   .footer {
-    background: var(--purple); color: rgba(255,255,255,0.55);
+    background: #0f1f0f; color: rgba(255,255,255,0.55);
     text-align: center; padding: 32px 24px;
     font-size: 13px; margin-top: auto;
   }
@@ -375,7 +375,7 @@ const STYLES = `
 
   .profile-page { max-width: 760px; margin: 40px auto; padding: 0 24px; }
   .profile-hero {
-    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    background: linear-gradient(135deg, #1A2F1A, #2d5a2d);
     border-radius: 20px; padding: 36px;
     display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap;
     margin-bottom: 24px;
